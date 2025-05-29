@@ -123,7 +123,7 @@ function updateCartDisplay() {
   let total = 0;
   
   cart.forEach(item => {
-    total += item.price;
+    total += item.price * item.quantity;
     
     const cartItem = document.createElement('div');
     cartItem.className = 'cart-item';
@@ -131,7 +131,9 @@ function updateCartDisplay() {
       <img src="${item.image}" alt="${item.name}">
       <div class="cart-item-info">
         <div class="cart-item-title">${item.name}</div>
-        <div class="cart-item-price">$${item.price.toFixed(2)} x ${item.quantity}</div>
+        <div class="cart-item-price">
+          $${item.price.toFixed(2)} x ${item.quantity} = $${(item.price * item.quantity).toFixed(2)}
+        </div>
       </div>`;
     cartItemsContainer.appendChild(cartItem);
   });
@@ -154,6 +156,7 @@ document.querySelectorAll('.cart-btn').forEach(button => {
       name: this.parentElement.querySelector('.product-title-1').textContent,
       price: parseFloat(this.parentElement.querySelector('.product-price-1').textContent.replace('$', '')),
       image: this.parentElement.querySelector('img').src,
+      quantity: 0
     };
 
     const cart = JSON.parse(localStorage.getItem('cart'));
@@ -172,6 +175,7 @@ document.querySelectorAll('.cart-btn').forEach(button => {
     setTimeout(() => this.textContent = originalText, 1000);
   });
 });
+
 
 
 // checkout script
