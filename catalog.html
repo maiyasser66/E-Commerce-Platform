@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <title>Ember</title>
+    </head>
+
+	<!--Header/Navigation-->
+    <body>
+		<header>
+			<nav>
+            <div class="container">
+                <a class="navbar" href="index.html">Ember<span>.</span></a>
+                <div class="navbar-collapse" id="navbar-nav">
+					<ul class="custom-navbar-nav">
+						<li class="nav-item"><a class="navlink" href="index.html">Home</a></li>
+						<li><a class="nav-link" href="catalog.html">Catalog</a></li>
+						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+						<li><a class="nav-link" href="login.html">Log In</a></li>
+						<li><a class="fi fi-br-search" href="#"><img src="./images/search.svg"></a></li>
+						<li><a class="fi fi-sr-shopping-cart" href="#"><img src="./images/shopping-cart.svg"></a></li>
+						<li class="profile-menu-container">
+							<a class="fi fi-sr-profile" href="#" id="profile-icon">
+								<img src="./images/profile.svg">
+							</a>
+							<div class="dropdown-menu" id="profile-dropdown">
+								<a href="#">My Profile</a>
+								<a href="#">My Orders</a>
+								<a href="#" id="logout-btn">Logout</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+            </div>
+        	</nav>
+		</header>
+
+		<!--Section-->
+		<section>
+			<div class="Main">
+				<div class="textarea">
+					<h1>Modern Design <span clsas="blockquote">Shape Your Story</span></h1>
+					<p class="mb-1">Elevate your space with our collection of modern furniture. From sleek sofas and minimalist chairs to statement pieces with personality, each item is crafted with precision, premium materials, and a deep commitment to comfort.</p>
+					<p><a href="catalog.html" class="btn-secondary">Shop Now</a><a href="" class="btn-white-outline">Explore</a></p>
+				</div>
+				<div class="hero-img-wrap">
+					<img src="images/cb2eb44a8172980c1a17c50c19bc9538.png" alt="Modern Furniture set">
+				</div>
+			</div>
+		</section>
+
+
+		<!--Product section-->
+        <div class="product-details-2">
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Moderm round table.png" alt="Modern round table" class="img-fluid">
+					<h3 class="product-title-1">Ember Orbit Coffee Table</h3>
+					<strong class="product-price-1">$350.00</strong>
+					<button class="cart-btn" 
+						data-id="1" 
+                		data-name="Ember Orbit Coffee Table" 
+                		data-price="350.00" 
+                		data-image="images/Moderm round table.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Chair.png" alt="Chair" class="img-fluid">
+					<h3 class="product-title-1">Modern Stylish Chair</h3>
+					<strong class="product-price-1">$120.00</strong>
+					<button class="cart-btn" 
+						data-id="2" 
+                		data-name="Modern Stylish Chair" 
+                		data-price="120.00" 
+                		data-image="images/Chair.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+            <div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Comfortable Bed.png" alt="Bed" class="img-fluid">
+					<h3 class="product-title-1">Modern Bed</h3>
+					<strong class="product-price-1">$680.00</strong>
+					<button class="cart-btn" 
+						data-id="3" 
+                		data-name="Modern Bed" 
+                		data-price="680.00" 
+                		data-image="images/Comfortable Bed.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/couch.png" alt="Couch" class="img-fluid">
+					<h3 class="product-title-1">Grey Couch</h3>
+					<strong class="product-price-1">$470.00</strong>
+					<button class="cart-btn" 
+						data-id="4" 
+                		data-name="Grey Couch" 
+                		data-price="470.00" 
+                		data-image="images/couch.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+            <div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Cozy Sofa.png" alt="Sofa" class="img-fluid">
+					<h3 class="product-title-1">Round Cozy Sofa</h3>
+					<strong class="product-price-1">$490.00</strong>
+					<button class="cart-btn" 
+						data-id="5" 
+                		data-name="Round Cozy Sofa" 
+                		data-price="490.00" 
+                		data-image="images/Cozy Sofa.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/ergonomic.png" alt="Chair" class="img-fluid">
+					<h3 class="product-title-1">Ergonomic Office Chair</h3>
+					<strong class="product-price-1">$160.00</strong>
+					<button class="cart-btn" 
+						data-id="6" 
+                		data-name="Ergonomic Office Chair" 
+                		data-price="160.00" 
+                		data-image="images/ergonomic.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+            <div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Modern Coffe table.png" alt="Modern Coffee table" class="img-fluid">
+					<h3 class="product-title-1">Wooden Coffee Table</h3>
+					<strong class="product-price-1">$310.00</strong>
+					<button class="cart-btn" 
+						data-id="7" 
+                		data-name="Wooden Coffee Table" 
+                		data-price="310.00" 
+                		data-image="images/Modern Coffe table.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Modern Desk.png" alt="Modern desk" class="img-fluid">
+					<h3 class="product-title-1">Modern Desk</h3>
+					<strong class="product-price-1">$180.00</strong>
+					<button class="cart-btn" 
+						data-id="8" 
+                		data-name="Modern Desk" 
+                		data-price="180.00" 
+                		data-image="images/Modern Desk.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+            <div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Flat sofa.png" alt="flat sofa" class="img-fluid">
+					<h3 class="product-title-1">Flat Sofa with Pillows</h3>
+					<strong class="product-price-1">$400.00</strong>
+					<button class="cart-btn" 
+						data-id="9" 
+                		data-name="Flat Sofa with Pillows" 
+                		data-price="400.00" 
+                		data-image="images/Flat sofa.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/Rocking.png" alt="roking chair" class="img-fluid">
+					<h3 class="product-title-1">White Rocking Chair</h3>
+					<strong class="product-price-1">$140.00</strong>
+					<button class="cart-btn" 
+						data-id="10" 
+                		data-name="White Rocking Chair" 
+                		data-price="140.00" 
+                		data-image="images/Rocking.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+            <div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/white sofa.png" alt="white sofa" class="img-fluid">
+					<h3 class="product-title-1">White Armed Sofa</h3>
+					<strong class="product-price-1">$230.00</strong>
+					<button class="cart-btn" 
+						data-id="11" 
+                		data-name="White Armed Sofa" 
+                		data-price="230.00" 
+                		data-image="images/white sofa.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+
+			<div class="product-item-11">
+				<a class="product-item-22">
+					<img src="images/dresser.png" alt="Modern Dresser" class="img-fluid">
+					<h3 class="product-title-1">Modern Wooden Dresser</h3>
+					<strong class="product-price-1">$280.00</strong>
+					<button class="cart-btn" 
+						data-id="12" 
+                		data-name="Modern Wooden Dresser" 
+                		data-price="280.00" 
+                		data-image="images/dresser.png">
+						Add to Cart
+					</button>
+    			</a>
+			</div>
+		</div>
+
+
+        <!--Footer section-->
+		<footer class="footer-section">
+			<div class="section-title-footer">
+				<div class="footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
+				<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+
+				<div class="social-links">
+  					<a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+ 					<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  					<a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  					<a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+
+				<div class="col-lg-12">
+					<div class="First">
+						<ul class="first-list">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+
+					<div class="second">
+						<ul class="second-list">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+
+					<div class="third">
+						<ul class="third-list">
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-copyright">
+					<p class="Copyright-text">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. Designed with love by Mai Yasser</a></p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Cart list -->
+		<div class="cart-list" id="cart-list">
+			<div class="cart-header">
+				<h3>Your Cart</h3>
+				<button class="close-cart">&times;</button>
+			</div>
+			<div class="cart-items" id="cart-items">
+
+			</div>
+			<div class="cart-footer">
+				<div class="cart-total">
+					<span>Total:</span>
+					<span id="cart-total-price">$0.00</span>
+				</div>
+				<button class="checkout-btn" id="checkout-btn">Checkout</button>
+			</div>
+		</div>
+
+        <script src="./js/script.js"></script>
+    </body>
+
+
+</html>
+
+
+
