@@ -38,7 +38,7 @@ else if (foundUser.password !== password) {
 else {
     errormsg.textContent = '';
     alert('Logged in successfully!');
-    window.location.href = 'index.html';
+    window.location.href = '../index.html';
 }
 
 })
@@ -61,7 +61,7 @@ if (profileIcon && profileDropdown) {
 const logoutBtn = document.getElementById('logout-btn');
 logoutBtn?.addEventListener('click', () => {
     alert('Logged out successfully!');
-    window.location.href = 'login.html';
+    window.location.href = './html/login.html';
 });
 
 
@@ -184,6 +184,6 @@ document.getElementById('checkout-btn').onclick = () => {
   if (!cart.length) return alert("Your cart is empty!");
   alert(`Checking out ${cart.length} items (Total: $${cart.reduce((sum, item) => sum + item.price, 0).toFixed(2)})`);
   localStorage.removeItem('cart');
-  window.location.href = 'catalog.html';
+  window.location.href = '../html/catalog.html';
 };
 
